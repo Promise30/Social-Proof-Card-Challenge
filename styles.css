@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root{
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+body{
+    margin: 0;
+    width: 100vw;
+    font-size: 15px;
+}
+.container{
+    background: url("./images/bg-pattern-top-desktop.svg") top left no-repeat, url("./images/bg-pattern-bottom-desktop.svg") bottom right no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    width: 90%;
+    background-color: var(--white);
+    padding: 3em 5em;
+}
+.service{
+    align-self: flex-start;
+    width: 40%;
+}
+.service .header{
+    color: var(--very-dark-magenta);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    width: 70%;
+}
+.service .info{
+    color: var(--dark-grayish-magenta);
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 80%;
+    line-height: 1.2;
+    letter-spacing: 0.5; 
+}
+.ratings-section{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -12em;
+}
+.rating img{
+    height: 10px;
+}
+.ratings-section .rating{
+    display: flex;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: var(--light-grayish-magenta);
+}
+.rating .text{
+    margin-left: 0.7rem;
+    font-size: 1rem;
+} 
+.rating-text{
+    color: var(--very-dark-magenta);
+    font-weight: 700;
+    font-size: 1rem;
+}
+.ratings-section .box-1{
+    margin-right: 7em;
+}
+.ratings-section .box-2{
+    margin-right: 1.5em;
+}
+.ratings-section .box-3{
+    margin-left: 3em;
+}
+.reviews-section{
+    align-self: flex-start;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reviews-section .review{
+    background-color: var(--very-dark-magenta);
+    padding: 2rem;
+    border-radius:0.5rem;
+    width: calc(95%/3);
+}
+.review .review-details{
+    display: flex;
+    margin-bottom: 1em;
+}
+.review img{
+    border-radius: 50%;
+    height: 40px;
+}
+.review-details .name{
+    margin-left: 0.8rem;
+}
+.review p{
+    line-height: 1.2;
+    letter-spacing: 0.5;
+    color: var(--white);
+    font-size: 1.2rem;
+}
+.reviews-section .review-2{
+    margin-top: 1.2rem;
+}
+.reviews-section .review-3{
+    margin-top: 2.4rem;
+}
+h3{
+    color: var(--light-grayish-magenta);
+}
+h4{
+    margin-top: 5px;
+    color: var(--soft-pink);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+footer{
+    font-size: 1.4rem;
+}
+footer .attribution{
+    font-size: 1.2rem;
+}
+@media (max-width: 980px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 3em;
+    }
+    .service{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .service .header{
+        width: 100%;
+        font-weight: 700;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    .service .info{
+        margin: auto;
+        width: 80%;
+        text-align: center;
+    }
+    .ratings-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        align-self: stretch;
+    }
+    .ratings-section .rating{
+        width: 90%;
+        margin-right: 0;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .rating .text{
+        margin-top: 10px;
+        font-size: 0.8rem;
+    }
+    .reviews-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .reviews-section .review{
+        width: 90%;
+        margin-top: 0;
+        margin-bottom: 0.8rem;
+    }
+    .review p{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 425px){
+    .container{
+        background: url("./images/bg-pattern-top-mobile.svg") top left no-repeat, url("./images/bg-pattern-bottom-mobile.svg") bottom right no-repeat;
+    }
+}
